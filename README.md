@@ -7,10 +7,13 @@ The following instructions allow for installation of the software, its dependenc
 
 How to use:
 1. Click code -> "Download Zip"
-2. Open the file on your local machine
-3. Install pip and python3 on your local machine
-4. Use pip install -r requirements.txt
-5. Create a copy of the Excel file with all the accounts you wish to revenue check, as the code will write over the Excel file
-6. In the terminal, type python3 neo.py
-7. Follow directions that terminal presents, including the name of the file with the accounts (in one sheet) and the region of your accounts in the sheet (EG New South Wales, Queensland etc)
-8. When you open the file again, your original account with all the details will have been removed with just 2 columns of account_name and revenue.
+2. Ensure you have a Code Editor. In this example, we will use VS Code
+3. Open the zip folder on your local machine, and open the folder produced from the zip with VS Code.
+4. Install pip and python3 on your local machine
+5. Use pip install -r requirements.txt
+6. Create a copy of the Excel file with all the accounts you wish to revenue check, as the code will write over the Excel file
+7. Rename the Excel file to ensure that it is a ".xlsx" file, and ensure that the name of the file is something you can type in easily (For example, if the file name is "SavedAccounts From 20231211to20231223" it will be difficult for you to type in the terminal later
+8. In the terminal, type python3 neo.py
+9. Follow directions that terminal presents, including the name of the file with the accounts (in one sheet) and the region of your accounts in the sheet (EG New South Wales, Queensland etc)
+10. Ensure the Excel file is closed while the program is running as the program will need to write over the excel file at the very end which is not possible with the Excel file open.
+11. When you open the file again, your original account with all the details will have been removed with just 2 columns of account_name and revenue.
