@@ -20,6 +20,6 @@ Usage:
 
 Note:
 
-Replace `SCRAPEOPS_API_KEY` with the key provided by ScrapeOps.
+Replace `SCRAPEOPS_API_KEY` with the key provided by [ScrapeOps](https://scrapeops.io/).
 
 For detailed instructions on setting up VS Code, refer to the [VS Code setup guide](https://code.visualstudio.com/docs/setup/windows).
