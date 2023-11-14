@@ -1,19 +1,25 @@
-# revenuescraper
+Web Revenue Scraper using ScrapeOps.io
 
-This software allows you to check revenues for multiple accounts automatically, instead of you having to do it one by one.
+This software automates revenue checks for multiple accounts, eliminating the need for manual inspection. It leverages ScrapeOps.io's API keys to bypass bot checks, offering free trials and subscriptions for up to 500,000 monthly revenue checks.
 
-The code essentially opens an Excel file (the file must be a .xlsx file and not a .csv or anythign else), and searches the first sheet of the excel sheet for a column with "account_name". It then performs a Google Search Query and looks for the most relevant account on ZoomInfo and returns a revenue by webscraping.
-The following instructions allow for installation of the software, its dependencies, and its use. The software relies on ScrapeOps.io's API keys to bypass the bot checks. ScrapeOps.io allows you for free trials, but with a subscription you will be allowed up to 500,000 revenue checks in one month. When using, keep in midn you will have to replace SCRAPEOPS_API_KEY with your own key that ScrapeOps will provide.
+Installation:
 
-How to use:
-1. Click code -> "Download Zip"
-2. Ensure you have a Code Editor. In this example, we will use VS Code
-3. Open the zip folder on your local machine, and open the folder produced from the zip with VS Code.
-4. Install pip and python3 on your local machine
-5. Use pip install -r requirements.txt
-6. Create a copy of the Excel file with all the accounts you wish to revenue check, as the code will write over the Excel file
-7. Rename the Excel file to ensure that it is a ".xlsx" file, and ensure that the name of the file is something you can type in easily (For example, if the file name is "SavedAccounts From 20231211to20231223" it will be difficult for you to type in the terminal later
-8. In the terminal, type python3 neo.py
-9. Follow directions that terminal presents, including the name of the file with the accounts (in one sheet) and the region of your accounts in the sheet (EG New South Wales, Queensland etc)
-10. Ensure the Excel file is closed while the program is running as the program will need to write over the excel file at the very end which is not possible with the Excel file open.
-11. When you open the file again, your original account with all the details will have been removed with just 2 columns of account_name and revenue.
+1. Download the code by clicking on "Code" -> "Download Zip."
+2. Use a Code Editor (e.g., VS Code) to open the unzipped folder.
+3. Install Python3 on your machine (from the [Python site](https://www.python.org/downloads/) or Microsoft Web Store).
+4. Open a terminal, navigate to the folder, and run `pip install -r requirements.txt`.
+
+Usage:
+
+1. Create a copy of the Excel file with the accounts for revenue checks (as the code will overwrite it).
+2. Rename the Excel file to ".xlsx" for easy typing in the terminal.
+3. In the terminal, type `python3 neo.py`.
+4. Follow the terminal prompts, including the filename and region of your accounts.
+5. Close the Excel file while the program runs, as it needs to overwrite the file at the end.
+6. Reopen the file to find account details reduced to two columns: account_name and revenue.
+
+Note:
+
+Replace `SCRAPEOPS_API_KEY` with the key provided by ScrapeOps.
+
+For detailed instructions on setting up VS Code, refer to the [VS Code setup guide](https://code.visualstudio.com/docs/setup/windows).
